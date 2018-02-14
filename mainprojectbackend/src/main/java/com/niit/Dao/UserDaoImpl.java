@@ -24,5 +24,32 @@ public class UserDaoImpl implements UserDao {
 		
 
 	}
+	public boolean isEmailUnique(String email)         // email is input from new user
+	{
+		Session session=sessionFactory.getCurrentSession();	
+		User user=(User)session.get(User.class,email);
+		
+		if (user==null)
+			return true;
+		else 
+			return false;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 
 }
