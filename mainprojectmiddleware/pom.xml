@@ -24,13 +24,9 @@
     <artifactId>mainprojectbackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     </dependency>
-    
   </dependencies>
   
-  
-  <build>
-  
-  
+  <build> 
     <finalName>mainprojectmiddleware</finalName>
   </build>
 </project>

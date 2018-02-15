@@ -27,7 +27,8 @@ public class DBConfiguration {
 		LocalSessionFactoryBuilder lsf=
 				new LocalSessionFactoryBuilder(getDataSource());
 		Properties hibernateProperties=new Properties();
-		hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
+		//hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
+		hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 		hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
 		hibernateProperties.setProperty("hibernate.show_sql", "true");
 		lsf.addProperties(hibernateProperties);
@@ -37,10 +38,17 @@ public class DBConfiguration {
 	@Bean
 	public DataSource getDataSource() {
 	    BasicDataSource dataSource = new BasicDataSource();
-	    dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
-	    dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
-	    dataSource.setUsername("system");
-	     dataSource.setPassword("tiger");
+	  //  dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
+	    //dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
+	    //dataSource.setUsername("system");
+	     //dataSource.setPassword("tiger");
+	     
+	     
+	     dataSource.setDriverClassName("org.h2.Driver");			
+	     dataSource.setUrl("jdbc:h2:tcp://localhost/~/project2");	
+	     dataSource.setUsername("sa");							
+	     dataSource.setPassword("");								
+
 	    return dataSource;
 	    
 	}
