@@ -1,7 +1,7 @@
 {{error.message}}
 <form>
-<div class="form-group">
 
+<div class="form-group">
 Enter email id
 <input type="email" ng-model="user.email" class="form-control">  
 </div>
@@ -15,6 +15,7 @@ Enter Password
 Enter FirstName
 <input type="text" ng-model="user.firstname" class="form-control">  
 </div>
+
 <div class="form-group">
 Enter lastname
 <input type="text" ng-model="user.lastname" class="form-control">  
@@ -27,33 +28,18 @@ Enter Phonenumber
 
 
 <div class="form-group">
+SELECT ROLE
 <select ng-model="user.role">
 <option value="STUDENT">Student
 <option value="EMPLOYEE">Employee
 <option value="ALUMNI">Alumni
 </select>
-
+</div>
 <input type="submit" ng-click="registerUser(user)" value="Register">  
 
 
 
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
 </form>
+
+
+

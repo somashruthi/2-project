@@ -1,18 +1,26 @@
-/** 
+ /** 
  *    userservice      ====      to make server side calls
  */
 
-green.factory('UserService',function($http) {
+app.factory('UserService',function($http) {
 	var userSerrvice={}
 			
 		userService.registerUser=fuction(user)
 		{
-			console.log( user)
+		//alert('entering user service registeruser function')
+			console.log( 'in userservice' +user)
 			return $http.post("http://loclhost:8085/mainprojectmiddleware/registeruser",user) 	
 			
 		}
+		
+	
+		userService.login=fuction(user)
+		{
+			console.log('userservice----> login')
+			console.log(user)
+			return $http.post("http://loclhost:8085/mainprojectmiddleware/login",user) 	
+			
+		}
+		
 		return userService;
-	
-
-	
 })

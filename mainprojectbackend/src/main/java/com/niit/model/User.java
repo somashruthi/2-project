@@ -18,6 +18,18 @@ public class User{
 	private String phonenumber;
 	
 	private boolean online;
+	
+	private String role;
+	
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	
 
 	public String getEmail() {
 		return email;
@@ -66,4 +78,21 @@ public class User{
 	public void setOnline(boolean online) {
 		this.online = online;
 	}
+	
+@Override
+public String toString()
+{
+	
+	return this.email +" " + this.firstname +" " + this.lastname 
+			+" " + this.password +" " + this.phonenumber +" " + this.role;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
