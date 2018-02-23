@@ -22,5 +22,12 @@ app.factory('UserService',function($http) {
 			
 		}
 		
+		userService.logout=function(){
+			
+			return $http.put("http://loclhost:8085/mainprojectmiddleware/logout")
+			
+			
+		}
+		
 		return userService;
 })

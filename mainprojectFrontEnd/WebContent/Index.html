@@ -8,10 +8,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     
   
+  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 <link
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
 	rel="stylesheet" />
+	
+	<link href="resources/css/login.css" rel="stylesheet">               <!-- adding css we will get in seperate box i.e email & password -->
+	
 <title>Insert title here</title>
 </head>
 <body ng-app="app">
@@ -32,10 +36,10 @@
 <div class="collapse navbar-collapse" id="collapse-example">
                 <ul class="nav navbar-nav ">
            
-           <li><a href="#/register">Sign Up</a></li>
-           <li><a href="#/login">Sign In</a></li>
-           <li><a href="#">Welcome {{loggedInUser.firstname}} &nbsp;   {{loggedInUser.lastname}}</a></li>
-           <li><a href="">logout</a></li>          <!--  it does not consist of html page so somewhat different   -->
+           <li><a href="#/register" ng-show="loggedInUser.firstname==undefined">Sign Up</a></li>
+           <li><a href="#/login" ng-show="loggedInUser.firstname==undefined">Sign In</a></li>
+           <li><a href="#" ng-show="loggedInUser.firstname!=undefined">Welcome {{loggedInUser.firstname}} &nbsp;   {{loggedInUser.lastname}}</a></li>
+           <li><a href="" ng-click="logout()" ng-show="loggedInUser.firstname!=undefined">logout</a></li>          <!--  it does not consist of html page so somewhat different   -->
 </ul>
 
 </div>
@@ -49,6 +53,10 @@
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+	
+	
 	
 	
 <script type="text/javascript" src="JS's/app.js"></script>

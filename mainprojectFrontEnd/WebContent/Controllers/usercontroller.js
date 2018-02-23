@@ -4,7 +4,7 @@
  */
 
 
-app.controller('UserController',function($scope,$rootScope,$location,UserService){
+app.controller('UserController',function($scope,$rootScope,$location,UserService,$cookieStore){
 	$scope.registerUser=function(user){     //user is from view i.e register.html
 		alert('entering usercontroller registerUser funcrion in frontend'+ user)
 		console.log('entering usercontroller registerUser function in frontend'+ user)
@@ -16,7 +16,7 @@ app.controller('UserController',function($scope,$rootScope,$location,UserService
 			},function(response){
 				$scope.error=response.data
 		
-			})
+			}) 
 	}
 	
 	
@@ -26,15 +26,10 @@ app.controller('UserController',function($scope,$rootScope,$location,UserService
 		UserService.login(user).then(function(response){
 			
 			$rootScope.loggedInUser=response.data
-			
-			
-			
+			$cookieStore.put
 			/*console.log(success)
-			console.log (response.data)*/
-			
-			
-			
-					$location.path('/home')
+			console.log (response.data)*/	
+				$location.path('/home')
 					},function(response){
 						/*console.log('error')
 							console.log(response.data)*/
