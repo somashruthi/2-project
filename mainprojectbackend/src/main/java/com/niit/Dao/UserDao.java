@@ -10,5 +10,5 @@ public interface UserDao {
 	//User gives all fields /columns as o/p is email and password is matched
 	void update(User validUser);
 	User getUser(String email);
-
+	void updateUser(User user);
 }

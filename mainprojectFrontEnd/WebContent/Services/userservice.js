@@ -22,12 +22,35 @@ app.factory('UserService',function($http) {
 			
 		}
 		
-		userService.logout=function(){
+		userService.logout=function()
+		{
 			
-			return $http.put("http://loclhost:8085/mainprojectmiddleware/logout")
-			
-			
+			return $http.put("http://loclhost:8085/mainprojectmiddleware/logout")	
 		}
+		
+		
+		userService.getUser=function()
+		{
+			
+			return $http.get("http://loclhost:8085/mainprojectmiddleware/getUser")	
+		}
+		
+		userService.updateUser=function(user)
+		{
+			
+			return $http.put("http://loclhost:8085/mainprojectmiddleware/updateUser",user)	
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		return userService;
 })

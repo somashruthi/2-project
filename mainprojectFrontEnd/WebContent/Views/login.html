@@ -1,7 +1,7 @@
 <!-- {{error message}}  login failed ...invalid username and password
  									unauthorized access
  									
- 		{{messgage}}				Successfully logged out			-->
+ 		{{message}}				Successfully logged out			-->
 
 <div id="login-box">
 <span style="color:red" class="error" ng-show="error.message!=undefined">{{error.message}}</span>
@@ -20,7 +20,7 @@
  <td><input type="password" ng-model="user.password"></td>
  </tr>
   
-<tr>
+<tr><br>
 
 <td colspan="2"><input type="submit" ng-click="login(user)"></td>
 </tr>

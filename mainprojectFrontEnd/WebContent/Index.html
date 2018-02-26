@@ -38,6 +38,7 @@
            
            <li><a href="#/register" ng-show="loggedInUser.firstname==undefined">Sign Up</a></li>
            <li><a href="#/login" ng-show="loggedInUser.firstname==undefined">Sign In</a></li>
+           <li><a href="#/edituserprofile" ng-show="loggedInUser.firstname!=undefined">Edit UserProfile</a></li>
            <li><a href="#" ng-show="loggedInUser.firstname!=undefined">Welcome {{loggedInUser.firstname}} &nbsp;   {{loggedInUser.lastname}}</a></li>
            <li><a href="" ng-click="logout()" ng-show="loggedInUser.firstname!=undefined">logout</a></li>          <!--  it does not consist of html page so somewhat different   -->
 </ul>
