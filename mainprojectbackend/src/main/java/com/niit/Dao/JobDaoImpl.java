@@ -1,5 +1,8 @@
 package com.niit.Dao;
 
+import java.util.List;
+
+import javax.persistence.Query;
 import javax.transaction.Transactional;
 
 import org.h2.engine.Session;
@@ -19,5 +22,32 @@ private SessionFactory sessionFactory;
 		session.save(job);
 
 	}
-
+	/*public List<Job> getAllJobs() {
+		 		
+		 		Session session=sessionFactory.getCurrentSession();
+		 		Query query=session.createQuery("from Job");
+		 		return query.list();
+		 	}
+		 
+			public Job getJob(int id) {
+		 		
+		 		Session session=sessionFactory.getCurrentSession();
+		 		Job job=(Job)session.get(Job.class,id);
+		 		return job;
+		 	}
+		 	
+		 	*/
+	public List<Job> getAllJobs() {
+		
+		Session session=sessionFactory.getCurrentSession();
+		Query query=session.createQuery("from Job");
+ 		return query.list();
+	
+	}
+	public Job getJob(int id) {
+		Session session=sessionFactory.getCurrentSession();
+ 		Job job=(Job)session.get(Job.class,id);
+ 		return job;
+		
+	}
 }

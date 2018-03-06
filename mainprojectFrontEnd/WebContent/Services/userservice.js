@@ -3,9 +3,9 @@
  */
 
 app.factory('UserService',function($http) {
-	var userSerrvice={}
+	var userService={}
 			
-		userService.registerUser=fuction(user)
+		userService.registerUser=function(user)
 		{
 		//alert('entering user service registeruser function')
 			console.log( 'in userservice' +user)
@@ -14,7 +14,7 @@ app.factory('UserService',function($http) {
 		}
 		
 	
-		userService.login=fuction(user)
+		userService.login=function(user)
 		{
 			console.log('userservice----> login')
 			console.log(user)

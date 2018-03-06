@@ -28,6 +28,25 @@ app.config(function($routeProvider){
 	})
 	
 	
+	.when('/addjob',{
+		templateUrl:'views/jobform.html',
+		controller:'JobController'
+			
+	})
+	
+	
+	.when('/alljobs',{
+		templateUrl:'views/jobslist.html',
+		controller:'JobController'
+			
+	})
+	
+	
+	.when('/getjob/:id',{
+		templateUrl:'views/jobdetails.html',
+		controller:'JobController'
+			
+	})
 	
 	.otherwise({
 		templateUrl:'views/Home.html',

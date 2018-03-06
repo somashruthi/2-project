@@ -1,8 +1,0 @@
-com\niit\model\Errorclass.class
-com\niit\model\User.class
-com\niit\Dao\UserDao.class
-com\niit\mainprojectbackend\App.class
-com\niit\Configuration\WebAppInitialiser.class
-com\niit\Configuration\DBConfiguration.class
-com\niit\Configuration\WebAppConfig.class
-com\niit\Dao\UserDaoImpl.class

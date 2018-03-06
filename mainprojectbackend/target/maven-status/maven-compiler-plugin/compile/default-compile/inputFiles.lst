@@ -1,8 +1,11 @@
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Configuration\WebAppInitialiser.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Configuration\DBConfiguration.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Configuration\WebAppConfig.java
+C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Dao\JobDaoImpl.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\model\User.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\mainprojectbackend\App.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\model\Errorclass.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Dao\UserDao.java
 C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Dao\UserDaoImpl.java
+C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\model\Job.java
+C:\Users\Shankar\git\2-project\mainprojectbackend\src\main\java\com\niit\Dao\JobDao.java
